@@ -1,6 +1,7 @@
 import './App.css';
 import {useEffect, useState} from 'react'
 import List from './components/List'
+import Form from './components/Form'
 
 interface Sub{
   nick: string
@@ -14,8 +15,8 @@ interface Sub{
   const INITIAL_STATE =[
     {
       nick: 'dapelu',
-      subMonths:3,
-      avatar:'htts://i.pravatar.cc/150?u=sergio_serrano'
+      subMonths: 3,
+      avatar:'https://i.pravatar.cc/150?u=sergio_serrano'
     }
   ]
 
@@ -31,6 +32,7 @@ function App() {
    
 <h1>Magali Subs</h1>
 <List subs={subs}/>
+<Form/>
     </div>
   );
 }
