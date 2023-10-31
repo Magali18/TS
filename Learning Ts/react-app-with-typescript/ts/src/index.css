@@ -11,3 +11,27 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+ul , h4{
+  margin:0;
+  padding: 0;
+}
+img{
+  border-radius: 200px;
+  height: auto;
+  width: 50px;
+}
+
+ul,li{
+  border-radius: 4px;
+  border: 1px solid rgb(172, 171, 171);
+  list-style: none;
+  margin-bottom: 16px;
+  max-width: 320px;
+  padding:9px 32px;
+}
+ form input{
+  border: 1px solid rgb(184, 181, 181);
+  border-radius: 2px;
+  padding: 4px 6px;
+  margin:0 4px;
+ }
