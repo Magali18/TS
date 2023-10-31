@@ -15,8 +15,7 @@ const Form =()=>{
                 <input value={inputValues.avatar} type='text' name='avatar' placeholder="avatar"/> 
                 <input value={inputValues.description} type='text' name='description' placeholder="description"/> 
                 <button> Save new Subs</button>
-
-            </form>
+                </form>
 
         </div>
     )
