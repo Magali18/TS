@@ -17,6 +17,11 @@ interface Sub{
       nick: 'dapelu',
       subMonths: 3,
       avatar:'https://i.pravatar.cc/150?u=sergio_serrano'
+    },
+    {
+      nick: 'cat_fit',
+      subMonths: 5,
+      avatar:'https://i.pravatar.cc/150?u=dapelu'
     }
   ]
 
