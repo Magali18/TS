@@ -21,7 +21,6 @@ const Form =()=>{
                 <input onChange={handleChange} value={inputValues.subMoths} type='text' name='subMoths' placeholder="subMoths"/> 
                 <input onChange={handleChange} value={inputValues.avatar} type='text' name='avatar' placeholder="avatar"/> 
                 <input onChange={handleChange} value={inputValues.description} type='text' name='description' placeholder="description"/> 
-                <button> Guardar </button>
                 </form>
 
         </div>
