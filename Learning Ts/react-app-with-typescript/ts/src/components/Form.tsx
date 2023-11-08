@@ -8,7 +8,7 @@ const Form =()=>{
         avatar:'',
         description:''
     });
-    const handleChange =(e:React.ChangeEvent<HTMLInputElement>)=>{
+    const handleChange =(e:React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>)=>{
     setInputValues({
         ...inputValues,
         [e.target.name]:e.target.value
