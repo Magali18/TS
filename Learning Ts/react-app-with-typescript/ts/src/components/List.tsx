@@ -11,7 +11,7 @@ const List =({subs}:Props)=>{
         <li key={sub.nick}>
             <img src={sub.avatar} alt="Avatr" />
             <h4> {sub.nick} (<small>{sub.subMonths}</small>)</h4>
-            <p> {sub.decription?.substring(0,100)}</p>
+            <p> {sub.description?.substring(0,100)}</p>
 
         </li>
     )
