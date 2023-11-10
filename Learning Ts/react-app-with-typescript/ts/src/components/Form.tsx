@@ -1,10 +1,15 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import {Sub} from '../types'
 
 
 interface FormState{
     inputValues: Sub
-}
+};
+interface FormProps{
+    onNewSubs:()=>{
+
+    }
+};
 
 const Form =()=>{
    
@@ -14,6 +19,11 @@ const Form =()=>{
         avatar:'',
         description:''
     });
+    const handleSubmit=(evt:React.FormEvent<HTMLFormElement>){
+        evt.preventDefault()
+        onNewSub( subs => (subs=>([...subs, inputValues])))
+
+    }
 
     const handleChange =(e:React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>)=>{
     setInputValues({

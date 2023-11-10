@@ -27,12 +27,15 @@ function App() {
 
   },[])
   const [subs,setSubs] = useState <AppState['subs']>([])
+  const [newSubsNumber, setNewSubsNumber] = useState<AppState["newSubsNumber"]>(0)
+
   return (
     <div className="App">
    
 <h1>Magali Subs</h1>
 <List subs={subs}/>
-<Form/>
+<Form onNewSub = {setSubs}/>
+
     </div>
   );
 }
