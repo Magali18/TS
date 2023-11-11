@@ -27,14 +27,14 @@ function App() {
 
   },[])
   const [subs,setSubs] = useState <AppState['subs']>([])
-  const [newSubsNumber, setNewSubsNumber] = useState<AppState["newSubsNumber"]>(0)
+  const [newSubsNumber, setNewSubsNumber] = useState<AppState['newSubNumber']>(0)
 
   return (
     <div className="App">
    
 <h1>Magali Subs</h1>
 <List subs={subs}/>
-<Form onNewSub = {setSubs}/>
+<Form onNewSubs={setSubs}/>
 
     </div>
   );

@@ -6,12 +6,10 @@ interface FormState{
     inputValues: Sub
 };
 interface FormProps{
-    onNewSubs:()=>{
-
-    }
+    onNewSubs:React.Dispatch<React.SetStateAction<Sub[]>>
 };
 
-const Form =()=>{
+const Form =({onNewSubs}:FormProps)=>{
    
     const [inputValues, setInputValues]= useState<FormState['inputValues']> ({
         nick:'',
@@ -19,9 +17,9 @@ const Form =()=>{
         avatar:'',
         description:''
     });
-    const handleSubmit=(evt:React.FormEvent<HTMLFormElement>){
+    const handleSubmit=(evt:React.FormEvent<HTMLFormElement>)=>{
         evt.preventDefault()
-        onNewSub( subs => (subs=>([...subs, inputValues])))
+        onNewSub(subs =>(subs => ([ ...subs, inputValues])))
 
     }
 
@@ -44,3 +42,7 @@ const Form =()=>{
     )
 }
 export default Form;
+
+function onNewSub(arg0: (subs: any) => (subs: any) => any[]) {
+    throw new Error("Function not implemented.");
+}
