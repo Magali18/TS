@@ -27,7 +27,7 @@ function App() {
 
   },[])
   const [subs,setSubs] = useState <AppState['subs']>([])
-  const [newSubsNumber, setNewSubsNumber] = useState<AppState['newSubNumber']>(0)
+  //const [newSubsNumber, setNewSubsNumber] = useState<AppState['newSubNumber']>(0)
 
   return (
     <div className="App">
